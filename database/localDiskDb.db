@@ -1,0 +1,88 @@
+{
+  "data": {
+    "hotels": [
+      {
+        "id": 1,
+        "name": "opera",
+        "country": "ukraine",
+        "description": "hotel"
+      },
+      {
+        "id": 2,
+        "name": "reviera",
+        "country": "usa",
+        "description": "motel"
+      },
+      {
+        "id": 3,
+        "name": "victoria",
+        "country": "france",
+        "description": "mini-hotel"
+      }
+    ],
+    "country": [
+      {
+        "name": "ukraine",
+        "description": "1st"
+      },
+      {
+        "name": "usa",
+        "description": "2nd"
+      },
+      {
+        "name": "france",
+        "description": "3rd"
+      }
+    ]   
+  },
+  "schema": {
+    "hotels": {
+      "id": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      },
+      "country": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "country": {
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "hotels": {
+      "id": 3
+    },
+    "country": {
+      "id": 1
+    }
+  }
+}
